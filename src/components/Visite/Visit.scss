@@ -1,0 +1,57 @@
+@import "../../globalStye.scss";
+
+.Visit{
+    color: $mainColor;
+    padding: 2% 20%;
+    @include mid {
+        padding: 2% 10%;
+    }
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 0 2%;
+
+        .title{
+            font-size: 40px;
+            @include mid {
+                font-size: 30px;
+            }
+        }
+        .text{
+            font-size: 13px;
+            width: 300px;
+            overflow-wrap: break-word;
+            font-weight: lighter;
+        }
+    }
+    .menuBar{
+        padding: 5% 2% ;
+        .tabs{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: 15px;
+            border-bottom: 1px solid rgba($color: $button, $alpha: .5);
+            .tab{
+                color: rgba($color: white, $alpha: .5);
+                padding-bottom:2%;
+                cursor: pointer;
+                width: 25%;
+                text-align: center;
+                font-weight: bold;
+            }
+            .active {
+                border-bottom: 3px solid $button;
+                color: $button;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 490px){
+ .Visit{
+     padding: 2% 0%;
+ }   
+}

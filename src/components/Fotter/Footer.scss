@@ -1,0 +1,55 @@
+@import"../../globalStye.scss";
+.Footer{
+    padding: 10%;
+    color: white;
+    .main{
+        display: flex;
+        align-items: start;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+        .container{
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            flex-direction: column;
+            gap: 20px;
+            .header{
+                padding-bottom: 10px;
+                border-bottom:1px solid $button
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li{
+                    list-style-type: none;
+                    cursor: pointer;
+                }
+            }
+            .contactIcon{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-self: center;
+                >*{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .endSection{
+        margin-top: 5%; 
+        font-size: 20px;
+        text-align: center;   
+        .logo{
+            font-family: 'Playfair Display';
+        }
+    }
+}
+
+// @media only screen and(max) {
+    
+// }

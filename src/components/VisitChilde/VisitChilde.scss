@@ -1,0 +1,106 @@
+@import "../../globalStye.scss";
+
+.VisitChide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap :10px;
+    position: relative;
+    .left{
+        flex:1;
+        .topLayer{
+            position: relative!important;
+            .image{
+                
+                width: 100%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .dots{
+                position: absolute;
+                bottom: -5%;
+                left:  -10%;
+                z-index:-1;
+                width: 40%;
+                
+            }
+            .onImage{
+                position: absolute;
+                top: 50%;
+                left: -20%;
+                font-size: 20px;
+                font-weight: bold;
+                transform: translateY(-50%);
+                
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        flex-grow: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container{
+            width: 70%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            flex-direction: column;
+            .title{
+                font-size: 45px;
+            }
+            .body{
+                font-size: 15px;
+                font-weight: lighter;
+                line-height: 1.7;
+            }
+                button{
+                    border: none;
+                    background-color: inherit;
+                    color: white;   
+                    padding: 10px 20px;     
+                    background-color: $button;
+                    border-radius: 20px;  
+                    cursor: pointer;              
+            }
+        }
+
+    }
+    .fixedBottom{
+        position: absolute;
+        bottom : 0;
+        right: 0;
+        .icon{
+            display: flex;
+            gap: 5px;
+            color: $button;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            border-bottom :1px solid $button;
+            border-right : 1px solid $button
+        }
+        .icon>*{
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width : 900px) {
+    .VisitChide{
+        display: flex;
+        flex-direction: column;
+        .left{
+            width: 50%;
+            margin-bottom: 5%;
+        }
+        .fixedBottom{
+            bottom : -10% ; 
+            right: 2%;
+        }
+    }
+}

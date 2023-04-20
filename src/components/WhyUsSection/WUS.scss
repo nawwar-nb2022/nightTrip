@@ -1,0 +1,39 @@
+@import "../../globalStye.scss";
+.WhyUsSection{
+    width: 48%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    background-color:  #02223B;
+    border-radius: 10px;
+    padding: 10%;
+    @include mid{
+        padding: 2% 10%;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+    .bodySection{
+        opacity: .5;
+
+    }
+    .bottomSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        .leftImage{
+            width:128px;
+            img{
+                width: 100%;
+                border-radius : 10px;
+            }
+        }
+        .rightImageTitle {
+             font-size: 12px;
+        }
+    }
+}

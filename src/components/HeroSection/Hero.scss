@@ -1,0 +1,84 @@
+@import "../../globalStye.scss";
+.Hero{
+   color: $mainColor;
+   width: 100%;
+   background-image: url("../../image/Hero\ image.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 1% 10%;
+   box-shadow: 0 10px 100px 10px rgba(1, 22, 39 , .64);
+   .top{
+       display: flex;
+       justify-content: space-between;
+       .left{
+        font-family: 'Playfair Display';
+       }
+       .right{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 10px;
+           .search{
+               cursor: pointer; 
+           }
+           .menu{
+               border: navajowhite;
+               outline: none;
+               background-color:$button;
+               color: $mainColor;
+               padding: 10px 30px;
+               border-radius:40px;
+               cursor: pointer;
+
+           }
+       }
+   }
+   .body{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 10% 20%;
+       flex-direction: column;
+       .title{
+           font-size: 120px;
+           font-family:'Playfair Display'; 
+          @include mid {
+              font-size:80px
+          }
+       }
+       .subTitle{
+        font-style : Bold;
+        font-size: 18px;
+        line-height: 100%;
+        vertical-align: Top;
+        letter-spacing: 10%;
+        margin: 20px 0;
+       }
+       .contain{
+           text-align: center;
+           font-style: 17px;
+       }
+   }
+   .bottom{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       .left{
+           writing-mode: vertical-lr;
+           font-size: 10px;
+           letter-spacing: 1px;
+           font-family: 'Abhaya Libre';
+       }
+       .right{
+           writing-mode: vertical-lr;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 5px;
+           color: $button;
+           *{cursor: pointer;
+               width: 16px;
+           }
+       }
+   }
+}
